@@ -2,7 +2,7 @@
 The database consists of 6 tables with current information of liquor and gaming licences for all venues within New South Wales (NSW, Australia). 
 ![alt text](https://github.com/colinpty/NSW_Liquor_Gaming_data/NSW_Licence_ERD.jpg?raw=true)
 
-
+![Alt text](/NSW_Licence_ERD.jpg?raw=true "Optional Title")
 
 
 
