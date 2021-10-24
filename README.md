@@ -17,18 +17,28 @@ The database consists of 6 tables with current information of liquor and gaming 
 
 
 #### List the TOP 10 the LGA with the most unrestrictive trading hour venues outside the Council of the City of Sydney.
-
+Results show that the Northern Beaches Local Government Area had the most unrestrictive trading hour venues.
 ``` 
-select locations.lga, COUNT(trading_hours.unrestricted) as venue
+select locations.lga, COUNT(trading_hours.unrestricted) as venues
 from locations
 inner join trading_hours on trading_hours.licence_number = locations.licence_number
 where locations.lga != 'Council of the City of Sydney'
 GROUP BY locations.lga
 ORDER BY hours DESC
 limit 10;
-
 ``` 
-
+| lga			       | venues |
+|------------------------------|:------:|
+| Northern Beaches Council     | 642    |
+| Inner West Council	       | 627    |
+| Central Coast Council	       | 547    |
+| Newcastle City Council       | 483    |
+| Wollongong City Council      | 430    |
+| Cessnock City Council	       | 413    |
+| Sutherland Shire Council     | 386    |
+| North Sydney Council         | 385    |
+| City of Parramatta Counci    | 353    |
+| Canterbury-Bankstown Council | 310    |
 
 
 
