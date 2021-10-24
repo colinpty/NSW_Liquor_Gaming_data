@@ -9,7 +9,7 @@ The database consists of 6 tables with current information of liquor and gaming 
 
 2. Run the code in the **create_nsw_liquor_licences.sql** file to create the table in the database.
 
-3. Run the code in all 6 insert files located in the **Insert_Data** Folder to insert data for each table. *Please note that there are over 100,000 records of data to be inserted which will take time*
+3. Run the code in all 6 insert files located in the **Insert_Data** Folder to insert data for each table. *Please note that there are over 100,000 records of data to be inserted which will take time.*
 
 
 
