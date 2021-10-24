@@ -13,6 +13,12 @@ The database consists of 6 tables with current information of liquor and gaming 
 
 
 
+## Case Scenarios
+
+
+### List the TOP 10 the LGA with the most unrestrictive trading hour venues outside the Council of the City of Sydney.
+
+
 
 
 
