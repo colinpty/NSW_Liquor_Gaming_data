@@ -16,8 +16,18 @@ The database consists of 6 tables with current information of liquor and gaming 
 ## Case Scenarios
 
 
-### List the TOP 10 the LGA with the most unrestrictive trading hour venues outside the Council of the City of Sydney.
+#### List the TOP 10 the LGA with the most unrestrictive trading hour venues outside the Council of the City of Sydney.
 
+``` 
+select locations.lga, COUNT(trading_hours.unrestricted) as venue
+from locations
+inner join trading_hours on trading_hours.licence_number = locations.licence_number
+where locations.lga != 'Council of the City of Sydney'
+GROUP BY locations.lga
+ORDER BY hours DESC
+limit 10;
+
+``` 
 
 
 
